@@ -5,14 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PrivateGiles | FiveM Developer</title>
   <meta name="description" content="PrivateGiles - FiveM developer specializing in custom scripts, frameworks, and immersive roleplay experiences." />
+  
+  <!-- Social Sharing Meta -->
+  <meta property="og:title" content="PrivateGiles | FiveM Developer" />
+  <meta property="og:description" content="Custom FiveM scripts, frameworks, and immersive RP experiences." />
+  <meta property="og:image" content="https://r2.fivemanage.com/bO0OrWRkzNTN4n6Xq30Bp/5Mqy2Ww6L2nb.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="icon" href="https://r2.fivemanage.com/bO0OrWRkzNTN4n6Xq30Bp/5Mqy2Ww6L2nb.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Gradient animation */
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradientShift 6s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
 </head>
 <body class="bg-gray-950 text-gray-200 font-sans">
 
+  <!-- Scroll Progress Bar -->
+  <div id="progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-400 to-purple-600 z-50"></div>
+
   <!-- Navbar -->
-  <header class="fixed w-full top-0 z-50 bg-black/60 backdrop-blur border-b border-gray-800">
+  <header class="fixed w-full top-0 z-50 bg-black/60 backdrop-blur border-b border-gray-800 transition-all duration-300">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
         PrivateGiles | FiveM Developer
@@ -31,7 +60,7 @@
   <section class="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-gray-900 via-black to-gray-950">
     <div class="absolute inset-0 bg-[url('https://r2.fivemanage.com/bO0OrWRkzNTN4n6Xq30Bp/5Mqy2Ww6L2nb.png')] bg-cover bg-center opacity-10"></div>
     <div class="relative z-10 max-w-3xl px-6">
-      <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
+      <h2 class="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-lg animate-gradient bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
         👋 Hey! I'm PrivateGiles
       </h2>
       <p class="mt-6 text-lg text-gray-400 leading-relaxed">
@@ -46,79 +75,83 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="py-24 max-w-6xl mx-auto px-6">
-  <h3 class="text-4xl font-bold text-center mb-12">About Me</h3>
-  <div class="grid md:grid-cols-2 gap-12 items-center">
-    
-    <!-- Left: Image / Avatar -->
-    <div class="relative">
-      <div class="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.5)] ring-4 ring-purple-600/40">
-        <img src="https://r2.fivemanage.com/bO0OrWRkzNTN4n6Xq30Bp/y45sDM9wi8NT.png" 
-             alt="PrivateGiles Avatar" 
-             class="w-full h-full object-cover" />
-      </div>
-      <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full shadow-lg text-sm font-semibold">
-        FiveM Developer & Tech Enthusiast
-      </div>
-    </div>
-    
-    <!-- Right: Bio -->
-    <div>
-      <p class="text-lg text-gray-300 leading-relaxed mb-6">
-        Hey 👋 I’m <span class="font-bold text-white">PrivateGiles</span>, a <span class="text-blue-400 font-semibold">33-year-old developer</span> from the North East of England with over <span class="text-purple-400 font-semibold">20 years in IT</span>.  
-      </p>
-      <p class="text-lg text-gray-300 leading-relaxed mb-6">
-        I’ve worked across <span class="font-semibold">systems, networking, troubleshooting, and software development</span>, which gives me a strong foundation to create stable, scalable, and efficient projects.  
-      </p>
-      <p class="text-lg text-gray-300 leading-relaxed mb-8">
-        Beyond coding, I’m passionate about <span class="text-pink-400 font-semibold">gaming, problem-solving, and community building</span> — bringing immersive roleplay experiences to FiveM through custom scripts, frameworks, and unique concepts.  
-      </p>
-      <div class="flex space-x-4">
-        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-blue-400">⚡ Problem Solver</span>
-        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-purple-400">🛠️ Full-Stack Mindset</span>
-        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-pink-400">🎮 Gamer at Heart</span>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- Projects -->
-<section id="projects" class="py-24 bg-gradient-to-b from-gray-900 to-black px-6">
-  <div class="max-w-6xl mx-auto">
-    <h3 class="text-4xl font-bold text-center mb-6">Highlighted Projects</h3>
-    <p class="text-lg text-gray-400 text-center max-w-3xl mx-auto mb-12">
-      Here are a few of my favorite <span class="text-blue-400 font-semibold">FiveM scripts</span> and 
-      <span class="text-purple-400 font-semibold">frameworks</span> I’ve built. Each project is designed 
-      to enhance roleplay immersion and bring fresh features to the community.
-    </p>
-    <div class="grid md:grid-cols-3 gap-10">
-      <!-- Project Card -->
-      <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition project-card">
-        <div class="p-6">
-          <h4 class="text-2xl font-bold mb-2 text-white">🚓 Custom Police Script</h4>
-          <p class="text-gray-400 mb-4">An advanced police job script with MDT, cuffs, jail system, and roleplay features.</p>
-          <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
-        </div>
-      </div>
-      <!-- Project Card -->
-      <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition project-card">
-        <div class="p-6">
-          <h4 class="text-2xl font-bold mb-2 text-white">💰 Economy Framework</h4>
-          <p class="text-gray-400 mb-4">A scalable economy system with jobs, banking, shops, and full customization.</p>
-          <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
-        </div>
-      </div>
-      <!-- Project Card -->
-      <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition project-card">
-        <div class="p-6">
-          <h4 class="text-2xl font-bold mb-2 text-white">🚗 Vehicle Dealership</h4>
-          <p class="text-gray-400 mb-4">Sleek dealership script with test drives, financing, and custom UI integration.</p>
-          <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <section id="about" class="relative py-24 max-w-6xl mx-auto px-6">
+    <!-- Background blobs -->
+    <div class="absolute -z-10 top-20 left-1/4 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl"></div>
+    <div class="absolute -z-10 bottom-10 right-1/4 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl"></div>
 
+    <h3 class="text-4xl font-bold text-center mb-12">About Me</h3>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Left: Image / Avatar -->
+      <div class="relative">
+        <div class="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.5)] ring-4 ring-purple-600/40">
+          <img src="https://r2.fivemanage.com/bO0OrWRkzNTN4n6Xq30Bp/y45sDM9wi8NT.png" 
+               alt="PrivateGiles Avatar" 
+               class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full shadow-lg text-sm font-semibold">
+          FiveM Developer & Tech Enthusiast
+        </div>
+      </div>
+      
+      <!-- Right: Bio -->
+      <div>
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">
+          Hey 👋 I’m <span class="font-bold text-white">PrivateGiles</span>, a <span class="text-blue-400 font-semibold">33-year-old developer</span> from the North East of England with over <span class="text-purple-400 font-semibold">20 years in IT</span>.  
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">
+          I’ve worked across <span class="font-semibold">systems, networking, troubleshooting, and software development</span>, which gives me a strong foundation to create stable, scalable, and efficient projects.  
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Beyond coding, I’m passionate about <span class="text-pink-400 font-semibold">gaming, problem-solving, and community building</span> — bringing immersive roleplay experiences to FiveM through custom scripts, frameworks, and unique concepts.  
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-blue-400">⚡ Problem Solver</span>
+          <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-purple-400">🛠️ Full-Stack Mindset</span>
+          <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-pink-400">🎮 Gamer at Heart</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-gradient-to-b from-gray-900 to-black px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-4xl font-bold text-center mb-6">Highlighted Projects</h3>
+      <p class="text-lg text-gray-400 text-center max-w-3xl mx-auto mb-12">
+        Here are a few of my favorite <span class="text-blue-400 font-semibold">FiveM scripts</span> and 
+        <span class="text-purple-400 font-semibold">frameworks</span> I’ve built. Each project is designed 
+        to enhance roleplay immersion and bring fresh features to the community.
+      </p>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Project Card -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-[0_0_25px_rgba(139,92,246,0.5)] transition project-card">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2 text-white">🚓 Custom Police Script</h4>
+            <p class="text-gray-400 mb-4">An advanced police job script with MDT, cuffs, jail system, and roleplay features.</p>
+            <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
+          </div>
+        </div>
+        <!-- Project Card -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-[0_0_25px_rgba(139,92,246,0.5)] transition project-card">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2 text-white">💰 Economy Framework</h4>
+            <p class="text-gray-400 mb-4">A scalable economy system with jobs, banking, shops, and full customization.</p>
+            <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
+          </div>
+        </div>
+        <!-- Project Card -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-[0_0_25px_rgba(139,92,246,0.5)] transition project-card">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2 text-white">🚗 Vehicle Dealership</h4>
+            <p class="text-gray-400 mb-4">Sleek dealership script with test drives, financing, and custom UI integration.</p>
+            <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="py-24 max-w-5xl mx-auto text-center px-6">
@@ -138,6 +171,8 @@
   <!-- Scripts -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ScrollReveal animations
     ScrollReveal().reveal('.project-card, #about div, h2, h3, h4, p', { 
       delay: 200, 
       duration: 800, 
@@ -145,6 +180,24 @@
       easing: 'ease-in-out', 
       origin: 'bottom', 
       reset: false 
+    });
+
+    // Navbar scroll effect
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("bg-black/90", "shadow-lg");
+      } else {
+        header.classList.remove("bg-black/90", "shadow-lg");
+      }
+    });
+
+    // Scroll progress bar
+    window.addEventListener("scroll", () => {
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollTop = window.scrollY;
+      const progress = (scrollTop / docHeight) * 100;
+      document.getElementById("progress").style.width = progress + "%";
     });
   </script>
 </body>

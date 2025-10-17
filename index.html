@@ -9,10 +9,13 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="bg-gray-950 text-gray-200 font-sans">
+
   <!-- Navbar -->
   <header class="fixed w-full top-0 z-50 bg-black/60 backdrop-blur border-b border-gray-800">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">PrivateGiles | FiveM Developer</h1>
+      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+        PrivateGiles | FiveM Developer
+      </h1>
       <nav>
         <ul class="flex space-x-6 font-medium">
           <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
@@ -28,10 +31,21 @@
     <div class="absolute inset-0 bg-[url('https://r2.fivemanage.com/bO0OrWRkzNTN4n6Xq30Bp/5Mqy2Ww6L2nb.png')] bg-cover bg-center opacity-10"></div>
     <div class="relative z-10 max-w-3xl px-6">
       <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
-        👋Hey! I'm PrivateGiles
+        👋 Hey! I'm PrivateGiles
       </h2>
-      <p class="mt-6 text-lg text-gray-400">
-        Crafting <span class="text-blue-400">immersive scripts</span>, optimized frameworks, and next-gen roleplay systems for the FiveM community.
+      <p class="mt-6 text-lg text-gray-400 leading-relaxed">
+        I’m a <strong>33-year-old developer from the North East of England</strong>, with a lifelong passion for technology and gaming.  
+        Over the past two decades, I’ve built a strong foundation in the IT industry, giving me extensive knowledge in systems, networking, troubleshooting, and software development.  
+        This background allows me to approach projects with both technical expertise and a problem-solving mindset, ensuring stability, efficiency, and scalability in everything I create.
+      </p>
+      <p class="mt-4 text-lg text-gray-400 leading-relaxed">
+        My true passion lies in <strong>Grand Theft Auto V’s FiveM platform</strong>, where I specialize in crafting high-quality custom scripts that bring roleplay servers to life.  
+        I focus on enhancing realism, immersion, and seamless roleplay experiences, delivering well-optimized resources tailored to community needs.  
+        Whether it’s working within ESX, QBCore, or QBOX frameworks, I design scripts that are clean, efficient, and built to handle both casual and high-population servers.
+      </p>
+      <p class="mt-4 text-lg text-gray-400 leading-relaxed">
+        With <strong>over 20 years in IT</strong> and several years dedicated to FiveM development, I combine technical depth with creative vision—pushing the boundaries of what roleplay servers can achieve.  
+        My mission is simple: to empower server owners and players with tools that transform gameplay into truly unforgettable experiences.
       </p>
       <a href="#projects" class="mt-10 inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
         🚀 View My Work
@@ -46,12 +60,12 @@
       <div>
         <span class="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-blue-500"></span>
         <h4 class="text-xl font-semibold text-white">🇬🇧 British FiveM Developer</h4>
-        <p class="text-gray-400">33 year old from the North East of England, FiveM Developer for over 3 years across ESX / QBcore and QBOX</p>
+        <p class="text-gray-400">33-year-old from the North East of England, FiveM Developer for over 3 years across ESX, QBCore, and QBOX.</p>
       </div>
       <div>
         <span class="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-purple-500"></span>
-        <h4 class="text-xl font-semibold text-white">🤟High Quality Work</h4>
-        <p class="text-gray-400">.</p>
+        <h4 class="text-xl font-semibold text-white">🤟 High Quality Work</h4>
+        <p class="text-gray-400">Delivering scripts that are optimized, scalable, and built for immersive roleplay experiences.</p>
       </div>
       <div>
         <span class="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-pink-500"></span>
@@ -66,6 +80,7 @@
     <div class="max-w-6xl mx-auto">
       <h3 class="text-4xl font-bold text-center mb-12">Featured Projects</h3>
       <div class="grid md:grid-cols-3 gap-10">
+        <!-- Project Card -->
         <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
           <div class="p-6">
             <h4 class="text-2xl font-bold mb-2 text-white">🚓 Custom Police Script</h4>
@@ -73,6 +88,7 @@
             <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
           </div>
         </div>
+        <!-- Project Card -->
         <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
           <div class="p-6">
             <h4 class="text-2xl font-bold mb-2 text-white">💰 Economy Framework</h4>
@@ -80,6 +96,7 @@
             <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
           </div>
         </div>
+        <!-- Project Card -->
         <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
           <div class="p-6">
             <h4 class="text-2xl font-bold mb-2 text-white">🚗 Vehicle Dealership</h4>
@@ -106,6 +123,7 @@
     © <span id="year"></span> PrivateGiles. Crafted with ❤️ and clean code.
   </footer>
 
+  <!-- Scripts -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     ScrollReveal().reveal('h2, h3, h4, p, .grid div, a', { 

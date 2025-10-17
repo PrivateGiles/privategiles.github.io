@@ -4,87 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PrivateGiles | FiveM Developer</title>
-  <link rel="icon" href="https://i.imgur.com/6qONd2W.png" /> <!-- replace with your own -->
+  <link rel="icon" href="https://i.imgur.com/6qONd2W.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body class="bg-gray-900 text-gray-200 font-sans">
-  <!-- Header -->
-  <header class="bg-gray-800 shadow-lg">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-white">PrivateGiles</h1>
+<body class="bg-gray-950 text-gray-200 font-sans">
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-50 bg-black/60 backdrop-blur border-b border-gray-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">PrivateGiles</h1>
       <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#about" class="hover:text-blue-400">About</a></li>
-          <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
-          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        <ul class="flex space-x-6 font-medium">
+          <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="bg-gray-900 py-20 text-center">
-    <h2 class="text-5xl font-bold text-white mb-4">FiveM Developer & Creator</h2>
-    <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-      I build optimized FiveM resources, scripts, and server solutions.  
-      Delivering performance, customization, and clean code for your community.
-    </p>
-    <a href="#projects" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600">
-      View My Work
-    </a>
+  <section class="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-gray-900 via-black to-gray-950">
+    <div class="absolute inset-0 bg-[url('https://i.imgur.com/5QnqQ8C.jpg')] bg-cover bg-center opacity-10"></div>
+    <div class="relative z-10 max-w-3xl px-6">
+      <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
+        FiveM Developer & Innovator
+      </h2>
+      <p class="mt-6 text-lg text-gray-400">
+        Crafting <span class="text-blue-400">immersive scripts</span>, optimized frameworks, and next-gen roleplay systems for the FiveM community.
+      </p>
+      <a href="#projects" class="mt-10 inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+        🚀 View My Work
+      </a>
+    </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-16 max-w-5xl mx-auto px-6">
-    <h3 class="text-3xl font-bold mb-6">About Me</h3>
-    <p class="text-gray-300 leading-relaxed">
-      Hi! I'm <span class="text-blue-400 font-semibold">PrivateGiles</span>, a passionate FiveM developer.
-      I specialize in creating high-quality custom scripts for RP servers,
-      optimizing server performance, and integrating unique gameplay mechanics.
-    </p>
+  <section id="about" class="py-24 max-w-5xl mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-12">Who I Am</h3>
+    <div class="space-y-8 relative border-l border-gray-700 pl-6">
+      <div>
+        <span class="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-blue-500"></span>
+        <h4 class="text-xl font-semibold text-white">🚀 Developer</h4>
+        <p class="text-gray-400">Passionate about building optimized and scalable FiveM scripts that power immersive roleplay servers.</p>
+      </div>
+      <div>
+        <span class="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-purple-500"></span>
+        <h4 class="text-xl font-semibold text-white">⚡ Performance Optimizer</h4>
+        <p class="text-gray-400">I specialize in reducing resource usage, enhancing stability, and delivering smooth experiences for players.</p>
+      </div>
+      <div>
+        <span class="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-pink-500"></span>
+        <h4 class="text-xl font-semibold text-white">🎨 Creator</h4>
+        <p class="text-gray-400">Focused on innovative gameplay systems that keep communities engaged and servers thriving.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-16 bg-gray-800 px-6">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-bold mb-8">Projects</h3>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
-          <h4 class="text-xl font-bold text-white mb-2">Custom Police Script</h4>
-          <p class="text-gray-400 mb-4">A fully customizable police job script with MDT, jail system, and more.</p>
-          <a href="#" class="text-blue-400 hover:underline">View on GitHub</a>
+  <section id="projects" class="py-24 bg-gradient-to-b from-gray-900 to-black px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-4xl font-bold text-center mb-12">Featured Projects</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2 text-white">🚓 Custom Police Script</h4>
+            <p class="text-gray-400 mb-4">An advanced police job script with MDT, cuffs, jail system, and roleplay features.</p>
+            <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
+          </div>
         </div>
-        <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
-          <h4 class="text-xl font-bold text-white mb-2">Economy Framework</h4>
-          <p class="text-gray-400 mb-4">An optimized economy system for roleplay servers with banking & jobs.</p>
-          <a href="#" class="text-blue-400 hover:underline">View on GitHub</a>
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2 text-white">💰 Economy Framework</h4>
+            <p class="text-gray-400 mb-4">A scalable economy system with jobs, banking, shops, and full customization.</p>
+            <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
+          </div>
         </div>
-        <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
-          <h4 class="text-xl font-bold text-white mb-2">Vehicle Shop</h4>
-          <p class="text-gray-400 mb-4">A slick, configurable vehicle dealership system with financing options.</p>
-          <a href="#" class="text-blue-400 hover:underline">View on GitHub</a>
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2 text-white">🚗 Vehicle Dealership</h4>
+            <p class="text-gray-400 mb-4">Sleek dealership script with test drives, financing, and custom UI integration.</p>
+            <a href="#" class="text-blue-400 hover:underline">View on GitHub →</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 max-w-5xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-6">Get In Touch</h3>
-    <p class="text-gray-400 mb-6">Interested in working together? Reach out via Discord or GitHub.</p>
+  <section id="contact" class="py-24 max-w-5xl mx-auto text-center px-6">
+    <h3 class="text-4xl font-bold mb-6">Let’s Connect</h3>
+    <p class="text-gray-400 mb-10">Looking to collaborate or hire me for your FiveM project? Reach out below:</p>
     <div class="flex justify-center space-x-6">
-      <a href="https://github.com/PrivateGiles" target="_blank" class="bg-gray-700 px-6 py-3 rounded-lg hover:bg-gray-600">GitHub</a>
-      <a href="https://discord.gg/yourdiscord" target="_blank" class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-500">Discord</a>
+      <a href="https://github.com/PrivateGiles" target="_blank" class="px-8 py-4 rounded-xl bg-gray-800 hover:bg-gray-700 text-white font-semibold shadow-lg hover:scale-105 transition">💻 GitHub</a>
+      <a href="https://discord.gg/yourdiscord" target="_blank" class="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold shadow-lg hover:scale-105 transition">💬 Discord</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 py-6 text-center text-gray-500 text-sm">
-    © <span id="year"></span> PrivateGiles. All rights reserved.
+  <footer class="bg-black py-6 text-center text-gray-500 text-sm">
+    © <span id="year"></span> PrivateGiles. Crafted with ❤️ and clean code.
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    ScrollReveal().reveal('h2, h3, h4, p, .grid div, a', { 
+      delay: 200, 
+      duration: 800, 
+      distance: '40px', 
+      easing: 'ease-in-out', 
+      origin: 'bottom', 
+      reset: false 
+    });
   </script>
 </body>
 </html>

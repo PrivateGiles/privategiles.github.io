@@ -668,7 +668,7 @@
                 </div>
 
                 <div class="discount-toggle" id="discountToggle" onclick="toggleDiscount()">
-                    <span class="toggle-label">Gov Discount (15%)</span>
+                    <span class="toggle-label">Gov Discount (20%)</span>
                     <div class="toggle-switch"></div>
                 </div>
 
@@ -708,7 +708,7 @@
         <div class="modal-content">
             <div class="modal-icon">🎉</div>
             <h3 class="modal-title">Order Complete!</h3>
-            <p class="modal-text">Thank you for visiting UwU Cat Café! Your order has been processed. ฅ^•ﻌ•^ฅ</p>
+            <p class="modal-text">Thank you for visiting UwU Cat Café! Moving onto next order! ฅ^•ﻌ•^ฅ</p>
             <button class="modal-btn" onclick="closeModal()">Yay! 🐱</button>
         </div>
     </div>
@@ -835,7 +835,7 @@
 
             // Calculate totals
             const subtotal = currentOrder.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            const discountAmount = discountEnabled ? Math.round(subtotal * 0.15) : 0;
+            const discountAmount = discountEnabled ? Math.round(subtotal * 0.20) : 0;
             const total = subtotal - discountAmount;
 
             document.getElementById('subtotal').textContent = `¥${subtotal}`;

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Turf Tub Gains — Cubic Roleplay</title>
+<title>Turf Tub Gains — SpaceTurtles Roleplay</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -195,7 +195,7 @@
   .dropzone input{ display:none; }
 
   .tub{ flex-shrink:0; width:56px; height:44px; }
-  .tub .fill{ transition: transform .5s cubic-bezier(.2,.9,.3,1.2); transform-origin: bottom; transform: scaleY(0); }
+  .tub .fill{ transition: transform .5s SpaceTurtles-bezier(.2,.9,.3,1.2); transform-origin: bottom; transform: scaleY(0); }
   .dropzone.has-file .tub .fill{ transform: scaleY(1); }
   .card.lab .tub .fill{ fill: var(--accent-2); }
 
@@ -262,7 +262,7 @@
 <body>
 <div class="wrap wide" id="wrap">
 
-  <div class="eyebrow">Cubic Roleplay</div>
+  <div class="eyebrow">SpaceTurtles Roleplay</div>
   <h1>Turf Gains Log</h1>
   <p class="sub">Pick your turf once — it drives both logs below and sends straight to <b>that turf's Discord channel</b>.</p>
 
@@ -423,15 +423,18 @@
    hasLab: set to true for turfs with an active drug lab right now — the
    Drug Lab Log column only appears when a turf with hasLab:true is
    selected. Both logs for a turf post to the same webhook.
+
+   Grinders Turf Logs
    ===================================================================== */
+  
 const TURFS = [
-  { name: "Oneil Farm",         webhook: "https://discord.com/api/webhooks/PUT_ID_HERE/PUT_TOKEN_HERE", hasLab: true  },
-  { name: "LS Stadium",         webhook: "https://discord.com/api/webhooks/PUT_ID_HERE/PUT_TOKEN_HERE", hasLab: false },
-  { name: "Marina",             webhook: "https://discord.com/api/webhooks/PUT_ID_HERE/PUT_TOKEN_HERE", hasLab: false },
-  { name: "Liberty",            webhook: "https://discord.com/api/webhooks/PUT_ID_HERE/PUT_TOKEN_HERE", hasLab: true  },
-  { name: "La Fuente Blanca",   webhook: "https://discord.com/api/webhooks/PUT_ID_HERE/PUT_TOKEN_HERE", hasLab: false },
-  { name: "Vinewood Bowl",      webhook: "https://discord.com/api/webhooks/PUT_ID_HERE/PUT_TOKEN_HERE", hasLab: false },
-  { name: "Floating Turf",      webhook: "https://discord.com/api/webhooks/PUT_ID_HERE/PUT_TOKEN_HERE", hasLab: false },
+  { name: "Oneil Farm",         webhook: "https://discord.com/api/webhooks/1523372596790431746/BN5AYQ_eBAG55QL8g_JMcJxXCd7dSygJGyjKRoISMwE6TtmbN7lkrDgqQY0Z5_G4tykr", hasLab: true  },
+  { name: "LS Stadium",         webhook: "https://discord.com/api/webhooks/1523378300049817720/9FDRS0CSKq2vJYbbFiAVlzOTZt_vZrnH3I4LzV5HUZfnFgJEx02VGJPYrivcmbBNgY-P", hasLab: false },
+  { name: "Marina",             webhook: "https://discord.com/api/webhooks/1523378413736296488/l7aaHOhPrqVizwOLfi2jI1q_PXyq8nUq67ICNj9QefImr7ojCysADrQhlwgw3iIg9t-1", hasLab: false },
+  { name: "Liberty",            webhook: "https://discord.com/api/webhooks/1523380662680293406/kCSXIqpqqUMdhVNYePDltYwNJncqqjcAreddQR3VR3pnIIjTiIIapdNSPsejRRayLUi_", hasLab: false },
+  { name: "La Fuente Blanca",   webhook: "https://discord.com/api/webhooks/1523380800655982715/6qx1kBrU2va2rK0eE9KtonWQyZ7OcKZqVH3WABq2slioZC9p437UU3MPueXEHx5MLIuC", hasLab: false },
+  { name: "Vinewood Bowl",      webhook: "https://discord.com/api/webhooks/1523380955358957668/7byASnCu5d3yfv2HG8OgznKcTvzW0s3UwhNX1H66fKaKJFLxfBj1fMmqDcRGTjRwMz87", hasLab: false },
+  { name: "Floating Turf",      webhook: "https://discord.com/api/webhooks/1523381053518254091/pn82650IYJfuSQ_p0jGIFw5pzjpCF5Up5poENMryQ2wLGysKjUFL9PJzp38coIQknffi", hasLab: false },
 ];
 /* ===================================================================== */
 
@@ -600,7 +603,7 @@ function initLogForm({ formId, nameId, imageInputId, commentsId, embedTitlePrefi
           { name: "Logged at", value: fmtTimestamp(capturedAt || new Date()), inline: false },
         ],
         image: { url: `attachment://${file.name}` },
-        footer: { text: "Cubic Roleplay — Turf Tub Tracker" }
+        footer: { text: "SpaceTurtles Roleplay — Turf Tub Tracker" }
       };
       if(comments){
         embed.fields.push({ name: "Comments", value: comments, inline: false });

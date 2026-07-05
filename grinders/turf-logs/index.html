@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Turf Tub Gains — SpaceTurtles Roleplay</title>
+<title>Turf Tub Gains — Cubic Roleplay</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -196,7 +195,7 @@
   .dropzone input{ display:none; }
 
   .tub{ flex-shrink:0; width:56px; height:44px; }
-  .tub .fill{ transition: transform .5s SpaceTurtles-bezier(.2,.9,.3,1.2); transform-origin: bottom; transform: scaleY(0); }
+  .tub .fill{ transition: transform .5s cubic-bezier(.2,.9,.3,1.2); transform-origin: bottom; transform: scaleY(0); }
   .dropzone.has-file .tub .fill{ transform: scaleY(1); }
   .card.lab .tub .fill{ fill: var(--accent-2); }
 
@@ -263,7 +262,7 @@
 <body>
 <div class="wrap wide" id="wrap">
 
-  <div class="eyebrow">SpaceTurtles Roleplay</div>
+  <div class="eyebrow">Cubic Roleplay</div>
   <h1>Turf Gains Log</h1>
   <p class="sub">Pick your turf once — it drives both logs below and sends straight to <b>that turf's Discord channel</b>.</p>
 
@@ -601,7 +600,7 @@ function initLogForm({ formId, nameId, imageInputId, commentsId, embedTitlePrefi
           { name: "Logged at", value: fmtTimestamp(capturedAt || new Date()), inline: false },
         ],
         image: { url: `attachment://${file.name}` },
-        footer: { text: "SpaceTurtles Roleplay — Turf Tub Tracker" }
+        footer: { text: "Cubic Roleplay — Turf Tub Tracker" }
       };
       if(comments){
         embed.fields.push({ name: "Comments", value: comments, inline: false });
